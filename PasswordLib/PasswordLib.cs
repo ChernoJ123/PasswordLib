@@ -7,11 +7,15 @@ namespace PasswordLib
            if (string.IsEmpty(password))
 
             return "INELIGIBLE";
+
+           if (password.Length < 8)
+               return "INELIGIBLE"; 
           // Criteria For Passwords
             bool hasUpper = passwordChecker.Any(char.IsUpper);
             bool hasLower = passwordChecker.Any(char.IsLower); 
             bool hasDigit = passwordChecker.Any(char.IsDigit); 
             bool hasSymbol = PasswordChecker.Any(char => !char.IsLetterOrDigit(c));
+          
          // Score Based on Criteria
             int score = 0;
             if (hasUpper) score++
