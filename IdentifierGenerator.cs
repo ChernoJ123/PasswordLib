@@ -1,3 +1,12 @@
+/// <summary>
+/// Generates a version 4 Universally Unique Identifier (UUID) using .NET’s Guid.NewGuid().
+/// </summary>
+/// <remarks>
+/// Version 4 UUIDs are randomly generated, providing a high probability of uniqueness.
+/// Example output: "d3f7c2a8-fa03-4b6e-b5e1-a8f2cadc9b08"
+/// </remarks>
+/// <returns>A string form of the UUID.</returns>
+
 using System;
 
 namespace PasswordLib
