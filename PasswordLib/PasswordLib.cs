@@ -1,3 +1,13 @@
+/// <summary>
+/// Validates whether the supplied password meets the configured security requirements.
+/// </summary>
+/// <param name="password">The password string to validate.</param>
+/// <returns>
+/// Returns true if the password satisfies length, uppercase, lowercase, numeric and special-character conditions; false otherwise.
+/// </returns>
+
+
+
 namespace PasswordLib
 {
     public class PasswordChecker
